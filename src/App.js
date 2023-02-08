@@ -3,7 +3,9 @@ import React, { useState } from 'react';
 import Calendar from 'react-calendar';
 
 function App() {
-  const [rows, setRows] = useState([]);
+  const [rows, setRows] = useState([
+    { name: 'Luis Perez', email: 'example@example.com', phone: '101-101-1111' },
+    ]);
   const [selectedDate, setSelectedDate] = useState(null);
 
   const handleUpload = (event) => {
